@@ -18,6 +18,12 @@ pub fn build(b: *std.Build) void {
     });
     nova.addImport("gl", gl_mod);
 
+    const zm_dep = b.dependency("zm", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    nova.addImport("zm", zm_dep.module("zm"));
+
     const zglfw_dep = b.dependency("zglfw", .{
         .target = target,
         .optimize = optimize,

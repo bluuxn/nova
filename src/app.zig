@@ -18,8 +18,6 @@ const Options = struct {
     draw: *const fn () void,
 };
 
-const App = @This();
-
 pub fn run(opts: Options) !void {
     try glfw.init();
 
@@ -51,6 +49,10 @@ pub fn run(opts: Options) !void {
         glfw.pollEvents();
         opts.tick(dt);
 
+        gl.ClearColor(1, 0, 0, 1);
+        gl.Clear(gl.COLOR_BUFFER_BIT);
         opts.draw();
+
+        window.swapBuffers();
     }
 }
