@@ -16,6 +16,10 @@
             .url = "git+https://github.com/zig-gamedev/zglfw.git#c337cb3d3f984468ea7a386335937a5d555fc024",
             .hash = "zglfw-0.10.0-dev-zgVDNMacIQA-k7kNSfwUc9Lfzx-bb_wklVm25K-p8Tr7",
         },
+        .zm = .{
+            .url = "git+https://github.com/griush/zm.git#27ee118800e6ee0804499d053a54100beb579bf3",
+            .hash = "zm-0.3.0-cLX-WY3PAABvjPwxqDx9GZkMixyyrlHueLZTxpGy3kLE",
+        },
     },
 
     .paths = .{
